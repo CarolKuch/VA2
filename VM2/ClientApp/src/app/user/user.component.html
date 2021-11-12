@@ -1,0 +1,13 @@
+<h1>From</h1>
+
+<form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+  <input type="text" name="fullName" placeholder="User Name" ngModel>
+  <br />
+
+  <input type="email" name="email" placeholder="User Email" ngModel>
+  <br />
+
+  <textarea name="message" placeholder="User message" ngModel></textarea>
+  <br />
+  <input type="submit" value="Send">
+</form>
